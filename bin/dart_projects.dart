@@ -3,8 +3,8 @@ void main () {
   int loop = 1;
 
   while (loop <= 100){
-    print(sum);
     sum = sum + loop;
     loop = loop+1;
+    print(sum);
   }
 }
