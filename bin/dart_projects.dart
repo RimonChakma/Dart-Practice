@@ -1,7 +1,5 @@
 void main () {
-  int loop = 2;
-  while (loop <=20) {
-    print(loop);
-    loop = loop +2;
+  for (int loop = 1; loop<=10; loop= loop+1){
+    print(loop*5);
   }
 }
