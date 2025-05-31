@@ -1,5 +1,10 @@
 void main () {
-  for (int loop = 1; loop<=10; loop= loop+1){
-    print(loop*5);
+  int sum = 0;
+  int loop = 1;
+
+  while (loop <= 100){
+    print(loop);
+    sum = sum + loop;
+    loop = loop+1;
   }
 }
