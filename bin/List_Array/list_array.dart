@@ -16,7 +16,20 @@ void task2 () {
   print(num);
 }
 
+// 3. find the largest number in the list
+void task3() {
+  List<int> count = [10,20,30,5,50,70,77];
+  int largest = count[0];
+  for (var number in count){
+    if(number>largest){
+      largest = number;
+    }
+  }
+  print(largest);
+}
+
 main () {
   task1();
   task2();
+  task3();
 }
