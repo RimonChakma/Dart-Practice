@@ -1,10 +1,14 @@
-void main () {
-  int sum = 0;
-  int loop = 1;
+import 'dart:io';
 
-  while (loop <= 100){
-    sum = sum + loop;
-    loop = loop+1;
-    print(sum);
+void main () {
+  print("please enter number:");
+  int num = int.parse(stdin.readLineSync()!);
+
+  if(num > 0){
+    print("number is positive");
+  }else if(num<0){
+    print("number is negative");
+  }else{
+    print("number is zero");
   }
 }
