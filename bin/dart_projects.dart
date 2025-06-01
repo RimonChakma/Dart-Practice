@@ -1,25 +1,6 @@
 void main () {
-  int grade = 30;
-
-  switch (grade){
-    case 80:
-      print("A+");
-      break;
-
-    case 70:
-      print("A");
-      break;
-
-    case 60:
-      print("A-");
-      break;
-
-    case 50:
-      print("D");
-      break;
-
-    default:
-      print("F");
-      break;
+  List<int> count = [1,2,3,4,5];
+  for (int i =0; i<count.length; i = i+1){
+    print(count[i]);
   }
 }
