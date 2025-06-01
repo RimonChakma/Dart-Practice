@@ -27,7 +27,30 @@ void task2() {
   }
 }
 
+// 3.the largest number of three number using if else
+
+void task3 () {
+
+  print("enter the number :");
+  int a = int.parse(stdin.readLineSync()!);
+
+  print("enter the number");
+  int b = int.parse(stdin.readLineSync()!);
+
+  print("Enter the number");
+  int c = int.parse(stdin.readLineSync()!);
+
+  if (a>b && a>c){
+    print("a is largest");
+  }else if(b>a && b>c){
+    print("b is largest");
+  }else{
+    print("c is largest");
+  }
+}
+
 main () {
   task1();
   task2();
+  task3();
 }
