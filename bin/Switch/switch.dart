@@ -2,7 +2,7 @@
 
 import 'dart:io';
 
-void task5 () {
+void task1 () {
   print("enter first number :");
   int num1 = int.parse(stdin.readLineSync()!);
 
@@ -32,4 +32,36 @@ void task5 () {
     default:
       print("not result");
   }
+}
+
+// 2. assign grades using switch A,B,C,D,F
+void task2 () {
+  int grade = 30;
+
+  switch (grade){
+    case 80:
+      print("A+");
+      break;
+
+    case 70:
+      print("A");
+      break;
+
+    case 60:
+      print("A-");
+      break;
+
+    case 50:
+      print("D");
+      break;
+
+    default:
+      print("F");
+      break;
+  }
+}
+
+main () {
+  task1();
+  task2();
 }
