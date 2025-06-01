@@ -28,6 +28,14 @@ void task3() {
   print(largest);
 }
 
+// reverse a list and print it
+
+void task4 () {
+  List<int> count = [1,2,3,4,5,6,7];
+  count = count.reversed.toList();
+  print(count);
+}
+
 main () {
   task1();
   task2();
