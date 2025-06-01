@@ -49,8 +49,21 @@ void task3 () {
   }
 }
 
+//4. check is a giving year is leap year
+void task4() {
+  print("enter your year :");
+  int year = int.parse(stdin.readLineSync()!);
+
+  if(year%4 == 0 && year%100!=0 || year % 400 ==0){
+    print("leap year");
+  }else{
+    print("is not leap year");
+  }
+}
+
 main () {
   task1();
   task2();
   task3();
+  task4();
 }

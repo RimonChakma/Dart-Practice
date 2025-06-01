@@ -1,21 +1,12 @@
 import 'dart:io';
 
 void main () {
+  print("enter your year :");
+  int year = int.parse(stdin.readLineSync()!);
 
-  print("enter the number :");
-  int a = int.parse(stdin.readLineSync()!);
-
-  print("enter the number");
-  int b = int.parse(stdin.readLineSync()!);
-
-  print("Enter the number");
-  int c = int.parse(stdin.readLineSync()!);
-
-  if (a>b && a>c){
-    print("a is largest");
-  }else if(b>a && b>c){
-    print("b is largest");
+  if(year%4 == 0 && year%100!=0 || year % 400 ==0){
+    print("leap year");
   }else{
-    print("c is largest");
+    print("is not leap year");
   }
 }
