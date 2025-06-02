@@ -1,3 +1,5 @@
+//Declare and print variables of types int, double, String,bool var and dynamic
+
 void main () {
   int a = 30;
   double b = 10.0;
