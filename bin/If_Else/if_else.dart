@@ -62,12 +62,26 @@ void task4() {
 }
 
 
+// check if a person if eligible to vote age>=18
+void task5  () {
+  print("enter your age :");
+  int age = int.parse(stdin.readLineSync()!);
+
+  if(age>=18){
+    print("you eligible to vote");
+  }else{
+    print("not eligible to vote");
+  }
+}
+
+
 
 main () {
   task1();
   task2();
   task3();
   task4();
+  task5();
 
 
 }
