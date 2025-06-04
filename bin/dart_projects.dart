@@ -1,12 +1,40 @@
 import 'dart:io';
 
 void main  () {
-  print("enter your age :");
-  int age = int.parse(stdin.readLineSync()!);
+  print("enter week day number :");
+  int day = int.parse(stdin.readLineSync()!);
+  
+  switch (day){
+    case 1:
+      print("saturday");
+      break;
+      
+    case 2:
+      print("sunday");
+      break;
+      
+    case 3:
+      print("monday");
+      break;
+      
+    case 4:
+      print("tuesday");
+      break;
 
-  if(age>=18){
-    print("you eligible to vote");
-  }else{
-    print("not eligible to vote");
+    case 5:
+      print("wednesday");
+      break;
+      
+    case 6:
+      print("thursday");
+      break;
+
+    case 7:
+      print("friday");
+      break;
+
+    default:
+      print("is not day");
+      break;
   }
 }
