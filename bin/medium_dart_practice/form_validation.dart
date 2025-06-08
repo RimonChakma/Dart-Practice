@@ -1,19 +1,31 @@
 // 1. password email form validation
 
+import 'dart:io';
+
 void main() {
-  String email = "rimon.chakma880@gmail.com";
-  String password = "Rimon1203";
+
+  print("enter your email :");
+  String? email = stdin.readLineSync()!;
+  print("enter your password :");
+  String? password = stdin.readLineSync()!;
+
 
   String? emailError = validateEmail(email);
+
   String? passwordError = validatePassword(password);
 
   if (emailError != null) {
     print("Email error: $emailError");
-  } else if (passwordError != null) {
-    print("Password error: $passwordError");
   } else {
     print("Form is valid");
   }
+
+  if(passwordError != null){
+    print("Password error $passwordError");
+  }else{
+    print("form is valid");
+  }
+
 }
 
 String? validateEmail(String email) {
