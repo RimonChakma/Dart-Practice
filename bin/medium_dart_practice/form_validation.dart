@@ -2,7 +2,7 @@
 
 import 'dart:io';
 
-void main() {
+void task1() {
 
   print("enter your email :");
   String? email = stdin.readLineSync()!;
@@ -54,4 +54,19 @@ String? validatePassword(String password) {
   } else {
     return null;
   }
+}
+
+// 2.Name Filter from List
+
+void task2 () {
+  List<String> names = ["rimon","rihan","rifan","nahid","nafis"];
+  String value ="s";
+
+  List<String> filteredNames = names.where((names)=>names.toLowerCase().contains(value.toLowerCase())).toList();
+  print(filteredNames);
+}
+
+void main  () {
+  task1();
+  task2();
 }
