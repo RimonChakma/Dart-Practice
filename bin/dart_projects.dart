@@ -1,7 +1,18 @@
-void main () {
-  List<String> names = ["rimon","rihan","rifan","nahid","nafis"];
-  String value ="s";
+import 'dart:io';
 
-  List<String> filteredNames = names.where((names)=>names.toLowerCase().contains(value.toLowerCase())).toList();
-  print(filteredNames);
+void main () {
+
+  print("enter your packageType :");
+  String packageOne = stdin.readLineSync()!;
+ 
+
+  if(packageOne == "free"){
+    print("no support");
+  }else if(packageOne == "gold"){
+    print("email support");
+  }else if(packageOne == "premium"){
+    print("live support");
+  }else{
+    print("invalid package");
+  }
 }

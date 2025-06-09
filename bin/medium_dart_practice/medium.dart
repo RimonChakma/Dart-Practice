@@ -66,7 +66,26 @@ void task2 () {
   print(filteredNames);
 }
 
+// 3.  Dropdown-like Logic
+
+void task3 () {
+
+  print("enter your packageType :");
+  String packageOne = stdin.readLineSync()!;
+
+  if(packageOne == "free"){
+    print("no support");
+  }else if(packageOne == "gold"){
+    print("email support");
+  }else if(packageOne == "premium"){
+    print("live support");
+  }else{
+    print("invalid package");
+  }
+}
+
 void main  () {
   task1();
   task2();
+  task3();
 }
