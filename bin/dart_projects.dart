@@ -1,18 +1,13 @@
-import 'dart:io';
-
 void main () {
+  List<Map<String,dynamic>> user =[
+    {"name":"A","age":20},
+    {"name":"B","age":26},
+    {"name":"C","age":27},
+    {"name":"D","age":28},
+  ];
 
-  print("enter your packageType :");
-  String packageOne = stdin.readLineSync()!;
- 
-
-  if(packageOne == "free"){
-    print("no support");
-  }else if(packageOne == "gold"){
-    print("email support");
-  }else if(packageOne == "premium"){
-    print("live support");
-  }else{
-    print("invalid package");
+  List<Map<String,dynamic>> filterData = user.where((user)=>user["age"] >25).toList();
+  for(var users in filterData){
+    print("${users["name"]}is ${users["age"]}");
   }
 }
