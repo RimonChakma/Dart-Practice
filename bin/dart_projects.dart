@@ -1,5 +1,9 @@
-count (int num1, int num2) => print(num1+num2);
+Future<String> fetchData () async {
+  await Future.delayed(Duration(seconds: 20));
+  return "Data Loaded";
+}
 
-void main () {
-  count(4, 6);
+void main () async {
+  var data = await fetchData();
+  print(data);
 }

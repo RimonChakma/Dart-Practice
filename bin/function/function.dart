@@ -32,18 +32,32 @@ var sum = (int num1, int num2) {
 void task2() {
   sum(4, 5);
 }
-
+//
 // 4. arrow function
 count4 (int num1, int num2) => print(num1+num2);
 
-void task4 () {
+void task3 () {
   count(4, 6);
 }
+//
 
+// asynchronous function
+
+Future<String> fetchData () async {
+  await Future.delayed(Duration(seconds: 20));
+  return "Data Loaded";
+}
+void task4 () async {
+  var data = await fetchData();
+  print(data);
+}
+
+//
 main(){
   task1();
   nullCheckUse();
   defaultValue();
   task2();
+  task3();
   task4();
 }
