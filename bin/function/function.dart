@@ -23,10 +23,20 @@ count3({required int num1, required int num2, int num3 =2}){
   print(num1*num2 + num3);
 }
 
+//3.anonymous function ||  lambda function
+
+var sum = (int num1, int num2) {
+  print(num1 + num2);
+};
+
+void task2() {
+  sum(4, 5);
+}
 
 
 main(){
   task1();
   nullCheckUse();
   defaultValue();
+  task2();
 }
