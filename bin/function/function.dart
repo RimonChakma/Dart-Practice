@@ -33,10 +33,17 @@ void task2() {
   sum(4, 5);
 }
 
+// 4. arrow function
+count4 (int num1, int num2) => print(num1+num2);
+
+void task4 () {
+  count(4, 6);
+}
 
 main(){
   task1();
   nullCheckUse();
   defaultValue();
   task2();
+  task4();
 }
