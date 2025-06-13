@@ -1,9 +1,11 @@
-Future<String> fetchData () async {
-  await Future.delayed(Duration(seconds: 20));
-  return "Data Loaded";
+dhaka(Function coxsbazar,) {
+  coxsbazar();
 }
 
-void main () async {
-  var data = await fetchData();
-  print(data);
+coxsbazar(){
+  print("I am a cox'sbazar");
+}
+
+void main(){
+  dhaka(coxsbazar);
 }

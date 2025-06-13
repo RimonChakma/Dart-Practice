@@ -41,7 +41,7 @@ void task3 () {
 }
 //
 
-// asynchronous function
+//5. asynchronous function
 
 Future<String> fetchData () async {
   await Future.delayed(Duration(seconds: 20));
@@ -52,6 +52,28 @@ void task4 () async {
   print(data);
 }
 
+//6.function return type
+one(int num1, int num2) {
+  return num1+num2;
+}
+
+void task5 () async {
+  print(one(5, 6)+9);
+}
+
+//7. high order function
+dhaka(Function coxsbazar,) {
+  coxsbazar();
+}
+
+coxsbazar(){
+  print("I am a cox'sbazar");
+}
+
+void task6(){
+  dhaka(coxsbazar);
+}
+
 //
 main(){
   task1();
@@ -60,4 +82,6 @@ main(){
   task2();
   task3();
   task4();
+  task5();
+  task6();
 }
